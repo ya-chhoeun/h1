@@ -1,0 +1,38 @@
+.container{
+    display: grid;
+    grid-template-rows:1fr 2fr 2fr 2fr ;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    'sidebarleft nav nav'
+    'sidebarleft main main'
+    'sidebarleft content content' 
+    'sidebarleft footer footer ';
+}
+.container div{
+    padding: 20px;
+    text-align: center;
+
+}
+.sidebarleft{
+    grid-area: sidebarleft;
+    background:#09aa59 ; 
+    align-items: center; 
+    justify-content: center;
+    display: grid;
+}
+.nav{
+    grid-area: nav;
+    background: #0ae075;
+}
+.main{
+    grid-area: main;
+    background: #0ac869;
+}
+.content{
+    grid-area: content;
+    background: #088d4b;
+}
+.footer{
+    grid-area: footer;
+    background: #044b28;
+}
